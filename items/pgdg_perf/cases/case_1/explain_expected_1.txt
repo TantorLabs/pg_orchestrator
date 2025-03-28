@@ -1,0 +1,3 @@
+Index Scan using my_table_pkey on public.my_table
+  Output: id, column1, column2
+  Index Cond: (my_table.id = 1)

@@ -1,0 +1,22 @@
+kind: perf
+db_params:
+  - db_type: pgdg
+    db_version: 16.4
+    db_port: 5432
+db_initial_script: fill_db.sh
+# configuration: 1c.conf
+docker:
+  host_port: 5430
+  container_port: 5445
+  container_name: "pg_orchestrator_container"
+  image: ubuntu:22.04
+performance_coefficient: 0.8
+cases:
+  - name: case_1
+    explain_queries:
+      - query: explain_query.sql
+        expected:
+          - explain_expected_1.txt
+    timing_queries:
+      - query: timing_query.sql
+        expected_time_ms: 1500

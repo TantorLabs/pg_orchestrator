@@ -1,0 +1,277 @@
+{
+	"contrib": [
+		{
+			"name": "credcheck",
+			"current_version": "https://github.com/MigOpsRepos/credcheck/releases/tag/v2.6",
+			"url": "https://github.com/MigOpsRepos/credcheck",
+			"editions": [
+				"be",
+				"se",
+				"se-certified",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "credcheck"
+		},
+		{
+			"name": "fasttrun",
+			"current_version": "....",
+			"url": "....",
+			"editions": [
+				"se-1c",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "fulleq",
+			"current_version": "....",
+			"url": "....",
+			"editions": [
+				"se-1c",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "hypopg",
+			"current_version": "https://github.com/HypoPG/hypopg/releases/tag/1.4.0",
+			"url": "https://github.com/HypoPG/hypopg",
+			"editions": [
+				"se",
+				"se-certified",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "mchar",
+			"current_version": "....",
+			"url": "....",
+			"editions": [
+				"se-1c",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "online_analyze",
+			"current_version": "....",
+			"url": "....",
+			"editions": [
+				"se-1c",
+				"se-certified"
+			],
+			"skip_log_verify": "1",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "orafce",
+			"current_version": "https://github.com/orafce/orafce/releases/tag/VERSION_4_9_2",
+			"url": "https://github.com/orafce/orafce",
+			"editions": [
+				"se",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "orafce"
+		},
+		{
+			"name": "page_repair",
+			"current_version": "https://github.com/MasahikoSawada/pgtools/tree/c4ef7c6d2af614122719c9ae29d1a65e1c027f4e/page_repair",
+			"url": "https://github.com/MasahikoSawada/pgtools/tree/master/page_repair",
+			"editions": [
+				"se",
+				"se-certified",
+				"be",
+				"se-1c"
+			],
+			"path": "page_repair",
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "pg_background",
+			"current_version": "https://github.com/vibhorkum/pg_background/releases/tag/v1.1",
+			"url": "https://github.com/vibhorkum/pg_background",
+			"editions": [
+				"se",
+				"se-certified",
+				"be"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "pg_cron",
+			"current_version": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.2",
+			"url": "https://github.com/citusdata/pg_cron",
+			"editions": [
+				"se",
+				"se-certified",
+				"be",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "pg_cron"
+		},
+		{
+			"name": "pg_hint_plan",
+			"current_version": "https://github.com/ossc-db/pg_hint_plan/releases/tag/REL15_1_5_0",
+			"url": "https://github.com/ossc-db/pg_hint_plan",
+			"editions": [
+				"se",
+				"se-certified",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "pg_hint_plan"
+		},
+		{
+			"name": "pg_partman",
+			"current_version": "https://github.com/pgpartman/pg_partman/releases/tag/v5.0.1",
+			"url": "https://github.com/pgpartman/pg_partman",
+			"editions": [
+				"se",
+				"se-certified"
+			],
+			"skip_log_verify": "1",
+			"shared_preload_libraries": "pg_partman_bgw"
+		},
+		{
+			"name": "pg_qualstats",
+			"current_version": "https://github.com/powa-team/pg_qualstats/releases/tag/2.0.4",
+			"url": "https://github.com/powa-team/pg_qualstats",
+			"editions": [
+				"se",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "pg_qualstats"
+		},
+		{
+			"name": "pg_repack",
+			"current_version": "https://github.com/reorg/pg_repack/releases/tag/ver_1.4.8",
+			"url": "https://github.com/reorg/pg_repack",
+			"editions": [
+				"se",
+				"se-certified",
+				"be",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "pg_repack"
+		},
+		{
+			"name": "pg_store_plans",
+			"current_version": "https://github.com/TantorLabs/pg_store_plans/tree/1.6.3",
+			"url": "https://github.com/TantorLabs/pg_store_plans",
+			"editions": [
+				"se",
+				"se-certified",
+				"be",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "pg_store_plans"
+		},
+		{
+			"name": "pg_variables",
+			"current_version": "https://github.com/postgrespro/pg_variables/releases/tag/v1.2.0",
+			"url": "https://github.com/postgrespro/pg_variables",
+			"editions": [
+				"se",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "pg_wait_sampling",
+			"current_version": "https://github.com/postgrespro/pg_wait_sampling/releases/tag/v1.1.4",
+			"url": "https://github.com/postgrespro/pg_wait_sampling",
+			"editions": [
+				"se",
+				"se-certified",
+				"be",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "pg_wait_sampling"
+		},
+		{
+			"name": "pgaudit",
+			"current_version": "https://github.com/pgaudit/pgaudit/releases/tag/1.7.0",
+			"url": "https://github.com/pgaudit/pgaudit",
+			"editions": [
+				"se",
+				"se-certified",
+				"be",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "pgaudit"
+		},
+		{
+			"name": "pgauditlogtofile",
+			"current_version": "https://github.com/fmbiete/pgauditlogtofile/tree/v1.5.12",
+			"url": "https://github.com/fmbiete/pgauditlogtofile",
+			"editions": [
+				"se",
+				"se-certified",
+				"be",
+				"se-1c"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "pgq",
+			"current_version": "https://github.com/pgq/pgq/releases/tag/v3.5",
+			"url": "https://github.com/pgq/pgq",
+			"editions": [
+				"se",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "pgsql-http",
+			"current_version": "https://github.com/pramsey/pgsql-http/releases/tag/v1.5.0",
+			"url": "https://github.com/pramsey/pgsql-http",
+			"editions": [
+				"se",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		},
+		{
+			"name": "plantuner",
+			"current_version": "https://github.com/postgrespro/plantuner/releases/tag/refs/tags/v1.0.1",
+			"url": "https://github.com/postgrespro/plantuner",
+			"editions": [
+				"se-1c",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": "plantuner"
+		},
+		{
+			"name": "dbcopies_decoding",
+			"current_version": "....",
+			"url": "....",
+			"editions": [
+				"se-1c",
+				"se-certified"
+			],
+			"skip_log_verify": "0",
+			"shared_preload_libraries": ""
+		}
+	]
+}

@@ -1,0 +1,27 @@
+kind: upgrade
+args:
+  initdb: --encoding=UTF8 --locale=ru_RU.UTF-8
+db_version: 14.11.0
+db_type: ttdb
+db_edition: se
+docker:
+  host_port: 5430
+  container_port: 5445
+  container_name: "pg_orchestrator_container"
+  registry: "gitlab.tantorlabs.ru:6000"
+  image: tt_build_astralinux:1.7
+steps:
+  - db_version: 15.6.0
+    db_edition: se
+    type: pg_upgrade
+  - db_version: 15.10.0
+    db_edition: se
+    package: tantor-se-server-15_15.10.0.alse17_amd64.deb
+    type: minor
+    post_scripts: test.sh
+    args:
+      pg_upgrade: --link
+  - db_version: 16.6.0
+    db_edition: se
+    package: tantor-se-server-16_16.6.0.alse17_amd64.deb
+    type: pg_upgrade

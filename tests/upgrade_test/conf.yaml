@@ -1,0 +1,22 @@
+kind: upgrade
+db_type: ttdb
+db_version: 14.11.0
+db_edition: se
+docker:
+  host_port: 5430
+  container_port: 5445
+  container_name: "pg_orchestrator_container"
+  registry: "*"
+  image: tt_build_ubuntu:22.04
+steps:
+  - db_version: 15.6.0
+    db_edition: se
+    type: pg_upgrade
+  - db_version: 15.10.0
+    db_edition: se
+    type: minor
+    args:
+      pg_upgrade: --link
+  - db_version: 16.6.0
+    db_edition: se
+    type: pg_dumpall

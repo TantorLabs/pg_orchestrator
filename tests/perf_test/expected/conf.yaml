@@ -1,0 +1,13 @@
+test_results:
+- test_version: '16.4'
+  test_edition: null
+  cases:
+  - case_name: case_1
+    explain_results:
+    - query: explain_query.sql
+      result: match
+      matched_expected_file: explain_expected_1.txt
+    timing_results:
+    - query: timing_query.sql
+      result: within expected
+      status: success
