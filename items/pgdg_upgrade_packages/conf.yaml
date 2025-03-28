@@ -1,0 +1,22 @@
+kind: upgrade
+args:
+  initdb: --encoding=UTF8 --locale=ru_RU.UTF-8
+db_version: 14.17
+db_type: pgdg
+package: postgresql-14_14.17-1.pgdg22.04+1_amd64.deb
+docker:
+  host_port: 5430
+  container_port: 5445
+  container_name: "pg_orchestrator_container"
+  image: ubuntu:22.04
+steps:
+  - db_version: 15.6
+    type: pg_upgrade
+  - db_version: 15.12
+    type: minor
+    package: postgresql-15_15.12-1.pgdg22.04+1_amd64.deb
+    args:
+      pg_upgrade: --link
+  - db_version: 16.8
+    type: pg_upgrade
+    package: postgresql-16_16.8-1.pgdg22.04+1_amd64.deb

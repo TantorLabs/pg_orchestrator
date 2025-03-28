@@ -1,0 +1,18 @@
+kind: perf
+db_params:
+  - db_type: pgdg
+    db_version: 16.4
+    db_port: 5432
+db_initial_script: fill_db.sh
+docker:
+  image: ubuntu:22.04
+performance_coefficient: 0.8
+cases:
+  - name: case_1
+    explain_queries:
+      - query: explain_query.sql
+        expected:
+          - explain_expected_1.txt
+    timing_queries:
+      - query: timing_query.sql
+        expected_time_ms: 1500
